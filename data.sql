@@ -1,0 +1,38 @@
+
+insert into node_tree (idNode, level, iLeft, iRight) values (1 , 2, 2 , 3);
+insert into node_tree (idNode, level, iLeft, iRight) values (2 , 2, 4 , 5);
+insert into node_tree (idNode, level, iLeft, iRight) values (3 , 2, 6 , 7);
+insert into node_tree (idNode, level, iLeft, iRight) values (4 , 2, 8 , 9);
+insert into node_tree (idNode, level, iLeft, iRight) values (5 , 1, 1 , 24);
+insert into node_tree (idNode, level, iLeft, iRight) values (6 , 2, 10, 11);
+insert into node_tree (idNode, level, iLeft, iRight) values (7 , 2, 12, 19);
+insert into node_tree (idNode, level, iLeft, iRight) values (8 , 3, 15, 16);
+insert into node_tree (idNode, level, iLeft, iRight) values (9 , 3, 17, 18);
+insert into node_tree (idNode, level, iLeft, iRight) values (10, 2, 20, 21);
+insert into node_tree (idNode, level, iLeft, iRight) values (11, 3, 13, 14);
+insert into node_tree (idNode, level, iLeft, iRight) values (12, 2, 22, 23);
+
+insert into node_tree_names (idNode, language, nodeName) values (1 , 'english', 'Marketing'); 
+insert into node_tree_names (idNode, language, nodeName) values (1 , 'italian', 'Marketing'); 
+insert into node_tree_names (idNode, language, nodeName) values (2 , 'english', 'Helpdesk'); 
+insert into node_tree_names (idNode, language, nodeName) values (2 , 'italian', 'Supporto tecnico'); 
+insert into node_tree_names (idNode, language, nodeName) values (3 , 'english', 'Managers'); 
+insert into node_tree_names (idNode, language, nodeName) values (3 , 'italian', 'Managers'); 
+insert into node_tree_names (idNode, language, nodeName) values (4 , 'english', 'Customer Account'); 
+insert into node_tree_names (idNode, language, nodeName) values (4 , 'italian', 'Assistenza Cliente'); 
+insert into node_tree_names (idNode, language, nodeName) values (5 , 'english', 'Docebo'); 
+insert into node_tree_names (idNode, language, nodeName) values (5 , 'italian', 'Docebo'); 
+insert into node_tree_names (idNode, language, nodeName) values (6 , 'english', 'Accounting'); 
+insert into node_tree_names (idNode, language, nodeName) values (6 , 'italian', 'Amministrazione'); 
+insert into node_tree_names (idNode, language, nodeName) values (7 , 'english', 'Sales'); 
+insert into node_tree_names (idNode, language, nodeName) values (7 , 'italian', 'Supporto Vendite'); 
+insert into node_tree_names (idNode, language, nodeName) values (8 , 'english', 'Italy'); 
+insert into node_tree_names (idNode, language, nodeName) values (8 , 'italian', 'Italia'); 
+insert into node_tree_names (idNode, language, nodeName) values (9 , 'english', 'Europe'); 
+insert into node_tree_names (idNode, language, nodeName) values (9 , 'italian', 'Europa'); 
+insert into node_tree_names (idNode, language, nodeName) values (10, 'english', 'Developers'); 
+insert into node_tree_names (idNode, language, nodeName) values (10, 'italian', 'Sviluppatori'); 
+insert into node_tree_names (idNode, language, nodeName) values (11, 'english', 'North America'); 
+insert into node_tree_names (idNode, language, nodeName) values (11, 'italian', 'Nord America'); 
+insert into node_tree_names (idNode, language, nodeName) values (12, 'english', 'Quality Assurance'); 
+insert into node_tree_names (idNode, language, nodeName) values (12, 'italian', 'Controllo Qualità');
