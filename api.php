@@ -101,8 +101,8 @@ function checkValues($nodeId, $language, $pageNum, $pageSize)
     return $errors;
 }
 //input definitions
-$node_id = $_GET['node_id'];
-$language = $_GET['language'];
+$node_id = isset($_GET['node_id']) ? $_GET['node_id'] : null;
+$language = isset($_GET['language']) ? $_GET['language'] : null;
 $search_keyword = isset($_GET['search_keyword']) ? $_GET['search_keyword'] : "";
 $page_num = isset($_GET['page_num']) && is_numeric($_GET['page_num']) ? $_GET['page_num'] : "0";
 $page_size = isset($_GET['page_size']) && is_numeric($_GET['page_size']) ? $_GET['page_size'] : "100";
