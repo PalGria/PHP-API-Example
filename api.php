@@ -45,9 +45,10 @@ function getSQLByNodeLanguage($nodeId, $language, $pageNum, $pageSize)
 }
 function getSQLByNodeLanguageQuery($nodeId, $language, $search_keyword, $pageNum, $pageSize)
 {
-    return "select x.idNode, y.nodeName
+
+    return "select x.idNode, y.nodeName, x.children
     FROM(
-    SELECT DISTINCT Child.idNode
+    SELECT DISTINCT Child.idNode, (  Child.iRight - Child.iLeft -1) as children
     FROM node_tree as Child, node_tree as Parent 
     WHERE Parent.iLeft < Child.iLeft AND Parent.iRight > Child.iRight  -- associate Child Nodes with ancestors
     GROUP BY Child.idNode, Child.iLeft, Child.iRight
@@ -71,7 +72,8 @@ function extractNodes($rawData)
     while ($row = $rawData->fetch_assoc()) {
         $child["idNode"] = $row['idNode'];
         $child["nodeName"] = $row['nodeName'];
-        $child["children"] = $row['children'];
+        $child["children"] = isset($row['children']) ? $row['children'] : null;
+
         array_push($result, $child);
     }
     return $result;
